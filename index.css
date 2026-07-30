@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+header {
+    color: whitesmoke;
+}
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family: Inter;
+}
+
+/********* TOP BAR ***********/
+.nav__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.nav__item {
+    float: right;
+}
+
+.nav__item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav__item a:hover{
+    background-color: #111111;
+}
+
+/**************************/
