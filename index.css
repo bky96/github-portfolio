@@ -2,6 +2,7 @@
 
 header {
     color: whitesmoke;
+    position: sticky;
 }
 body {
     background-color: rgb(27, 27, 27);
@@ -10,19 +11,26 @@ body {
 }
 
 /********* TOP BAR ***********/
-.nav__items {
+
+.nav-items {
     list-style-type: none;
+    align-items: center;
+    display: flex;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333333;
 }
 
-.nav__item {
-    float: right;
+.nav-brand {
+    margin: auto;
+    font-weight: bold;
 }
 
-.nav__item a {
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
     display: block;
     color: white;
     text-align: center;
@@ -30,8 +38,108 @@ body {
     text-decoration: none;
 }
 
-.nav__item a:hover{
+.nav-item a:hover{
     background-color: #111111;
 }
 
+/**************************/
+
+/********* HERO **********/
+.hero {
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%,
+    transparent 70%);
+    pointer-events: none;
+}
+
+.hero-title {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-profession {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-cvbtn {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 11px 22px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    background-color: #111111;
+    z-index: 2;
+}
+
+.hero-cvbtn:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.hero-cvbtn:active {
+    transform: scale(0.95);
+}
+/**************************/
+
+/********* Ueber Mich **********/
+.aboutme {
+    width: 100%;
+    background-color: #333333;
+    min-height: 100vh;
+}
+
+.about-title {
+    padding: 20px 10px;
+}
+/**************************/
+
+/******** PROJECTE **********/
+.projects {
+    min-height: 100vh;
+}
+/**************************/
+
+/********* Kontakt **********/
+.contacts {
+    min-height: 100vh;
+}
 /**************************/

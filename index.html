@@ -9,52 +9,38 @@
 <body>
     <!-- **** HEADER PART **** -->
     <header class ="header" role ="banner" id="top">
-        <div class="row">
-            <nav class="nav" role="navigation">
-                <ul class="nav__items">
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Kontakt</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projekte</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">Über mich</a>
-                    </li>                    
-                </ul>
-            </nav>
-        </div>
-<!--         <div class="header__text-box row">
-            <div class="header__text">
-                <h1 class="heading-primary">
-                    <span>Burak Yildirim</span>
-                </h1>
-                <p>
-                    Softwareentwickler
-                </p>
-                <a href="#contact" class="btn btn--pink">Contact Me</a>
-            </div>
-        </div>
-    </header> -->
+        <nav class="nav" role="navigation">
+            <ul class="nav-items">
+                <li class="nav-brand">Burak Yildirim | Portfolio</li>
+                <li class="nav-item"><a href="#aboutme" class="nav-link">Über mich</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projekte</a></li>                    
+                <li class="nav-item"><a href="#contacts" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main role="main">
+    
     <!-- **** HERO **** -->
     <section class="hero" id="hero">
-        <div class="row">
-            <h2>Burak Yildirim</h2>
+        <div class="image-container">
+            <img src="./images/testImage.jpeg" alt="Portraet von mir" class="hero-img">
+            <div class="hero-glow"></div>
         </div>
+        <h1 class="hero-title"> Burak Kemal Yildirim </h1>
+        <p class="hero-profession">Software Development | Machine Integration</p>    
+        <button class="hero-cvbtn">Lebenslauf herunterladen</button>
     </section>
     
     <!-- **** About Me **** -->
     <section class="aboutme" id="aboutme">
-        <div class="row">
-            <h2>ÜBER MICH</h2>
-        </div>
+        <h2 class="about-title">Über mich</h2>
+        <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae adipisci perferendis qui provident saepe aliquid. Ipsum enim itaque quisquam quibusdam, facilis ex perspiciatis voluptas labore fugit adipisci voluptatibus, quidem asperiores?</p>
     </section>
+
     <!-- **** PROJEKTE **** -->
-    <section class="work" id="work">
-        <div class="row">
-            <h2>PROJEKTE</h2>
+    <section class="projects" id="projects">
+        <h2 class="project-title">PROJEKTE</h2>
             <div class="work__boxes">
                     <!-- Hier alle Projekte hinzufuegen -->
                 
@@ -86,9 +72,11 @@
             </div>
         </div>
     </section>
+
     <!-- **** Kontakte **** -->
     <section class="contacts" id="contacts">
         <h3>Kontakt</h3>
+        
     </section>
     </main>
     <script src="./index.js"></script>
