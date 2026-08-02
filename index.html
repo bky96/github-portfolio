@@ -11,7 +11,7 @@
     <header class ="header" role ="banner" id="top">
         <nav class="nav" role="navigation">
             <ul class="nav-items">
-                <li class="nav-brand">Burak Yildirim | Portfolio</li>
+                <li class="nav-brand">Burak Yildirim</li>
                 <li class="nav-item"><a href="#aboutme" class="nav-link">Über mich</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projekte</a></li>                    
                 <li class="nav-item"><a href="#contacts" class="nav-link">Kontakt</a></li>
@@ -23,60 +23,87 @@
     
     <!-- **** HERO **** -->
     <section class="hero" id="hero">
-        <div class="image-container">
-            <img src="./images/testImage.jpeg" alt="Portraet von mir" class="hero-img">
-            <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-copy">
+                <h1 class="hero-title">Hallo, ich bin Burak Yildirim.</h1>
+                <p class="hero-text">Ich bin ein Softwareentwickler</p>
+                <button class="hero-cvbtn">Lebenslauf herunterladen</button>
+            </div>
+            <div class="image-container">
+                <img src="./images/testImage.jpeg" alt="Portraet von mir" class="hero-img">
+            </div>
         </div>
-        <h1 class="hero-title"> Burak Kemal Yildirim </h1>
-        <p class="hero-profession">Software Development | Machine Integration</p>    
-        <button class="hero-cvbtn">Lebenslauf herunterladen</button>
     </section>
-    
+    <div class="divider"></div>
     <!-- **** About Me **** -->
     <section class="aboutme" id="aboutme">
         <h2 class="about-title">Über mich</h2>
         <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae adipisci perferendis qui provident saepe aliquid. Ipsum enim itaque quisquam quibusdam, facilis ex perspiciatis voluptas labore fugit adipisci voluptatibus, quidem asperiores?</p>
     </section>
-
+    <div class="divider"></div>
     <!-- **** PROJEKTE **** -->
     <section class="projects" id="projects">
         <h2 class="project-title">PROJEKTE</h2>
-            <div class="work__boxes">
-                    <!-- Hier alle Projekte hinzufuegen -->
-                
-                <div class="work__box">
-                    <div class="work__text">
-                        <h3>Template Projekte</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque, delectus dolores nisi incidunt qui odit consequuntur asperiores eligendi culpa, assumenda ratione aspernatur labore? Officia ea amet alias soluta cum?
-                        </p>
-                        <ul class="work__list">
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>YOLO</li>
-                            <li>Machine Learning</li>
-                        </ul>
-                    </div>
-                    <div class="work__links">
-                        <!-- Link zum Projekt -->
-                        <a href="xy" target="_blank" class="link__text">
-                            Quick Summary <span>&rarr;</span>
-                        </a>
-                        <!-- Link zu Github Repo -->
-                        <a href="xy" target="_blank" title="View Source Code">
-                            EMPTY TEXT
-                        </a>
-                    </div>
+        <div class="work-boxes">
+            <!-- Hier alle Projekte hinzufuegen -->
+            <div class="project1">
+                <h3>Template Projekte</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque, delectus dolores nisi incidunt qui odit consequuntur asperiores eligendi culpa, assumenda ratione aspernatur labore? Officia ea amet alias soluta cum?</p>
+                    <ul class="work-list">
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>YOLO</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                <div class="project-link">
+                    <!-- Link zum Projekt -->
+                    <a href="xy" target="_blank" class="link-text">Quick Summary &rarr;</a>
+                    <!-- Link zu Github Repo -->
+                    <a href="xy" target="_blank" title="View Source Code">EMPTY TEXT</a>
                 </div>
-            
             </div>
+            <div class="project2">
+                <h3>Template Projekte</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque, delectus dolores nisi incidunt qui odit consequuntur asperiores eligendi culpa, assumenda ratione aspernatur labore? Officia ea amet alias soluta cum?</p>
+                    <ul class="work-list">
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>YOLO</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                <div class="project-link">
+                    <!-- Link zum Projekt -->
+                    <a href="xy" target="_blank" class="link-text">Quick Summary &rarr;</a>
+                    <!-- Link zu Github Repo -->
+                    <a href="xy" target="_blank" title="View Source Code">EMPTY TEXT</a>
+                </div>
+            </div>            
         </div>
     </section>
-
+    <div class="divider"></div>
+    <!-- Werdegang -->
+    <section class="career" id="career">
+        <h2 class="career-title">Werdegang</h2>
+        <div class="career-panel">
+            <div class="career-info1">
+                <img src="./images/schoolIcon.svg" alt="School Icon" class="school-icon">
+            </div>
+            <div class="career-info2">
+                <img src="./images/workIcon.svg" alt="Work Icon" class="work-icon">
+            </div>
+            <!--<div class="career-info3"></div>-->
+        </div>
+    </section>
+    <div class="divider"></div>
     <!-- **** Kontakte **** -->
     <section class="contacts" id="contacts">
-        <h3>Kontakt</h3>
-        
+        <h2 class="contact-title">Kontakt</h2>
+        <div class="contact-content">
+            <p> Hoffentlich konnte ich ihr Interesse wecken und freue mich auf eine Zusammenarbeit!</p>
+            <button class="contact-btn"> <span>Kontakt aufnehmen</span>
+            <img src="./images/mailIcon.svg" alt="Mail Icon" class="mail-icon">
+            </button>
+        </div>
     </section>
     </main>
     <script src="./index.js"></script>
